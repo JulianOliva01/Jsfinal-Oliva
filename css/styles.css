@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 5px;
+}
+
+.carrito {
+    width: 35%;
+    background-color: white(82, 67, 67);
+    /* border: black solid 2px; */
+    border-radius: 20px;
+    margin: auto;
+}
+
+.carrito .header-carrito {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+.carrito .item-carro {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid #666;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px; 
+}
+
+.carrito .item-carro img {
+    margin-right: 20px;
+}
+
+.carrito .item-carro .titulo-item-carro {
+    display: block;
+    font-weight: bold;
+    margin:10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.carrito .item-carro .seleccion-cantidad {
+    display: inline;
+    margin-right: 25px;
+}
+
+.carrito .item-carro .item-cantidad-carro {
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    display: inline-block;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.carrito .item-carro .seleccion-cantidad i {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+}
+
+.carrito .item-carro .precio-item-carro {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.carrito .item-carro .btn-eliminar {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+
+.carrito .item-carro .btn-eliminar i {
+    pointer-events: none;
+}
+
+.total-carro {
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.total-carro .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.total-carro .btn-pagar {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3;
+}
+
+.total-carro .btn-pagar:hover{
+    scale: 1.05;
+    border-radius: 10px;
+}
+

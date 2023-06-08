@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS sweetAlert-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.css">
+  <!--Icons-Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!--CSS-bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="m-1 p-1 bg-black bg-gradient">
+  <header>
+    <nav class="navbar navbar-expand-lg border border-white">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="index.html">Chass-Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light clearfix" aria-current="page" href="index.html">Incio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pestañas/buzos.html">Buzos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pestañas/camperas.html">camperas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pestañas/camisetas.html">Camisetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./shorts.html">Shorts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pestañas/remeras.html">Remeras</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success text-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <a href="pestañas/buzos.html"><img src="imagenes/buzos/buzo-chicago.webp" class="d-block w-80 m-auto"
+              alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <a href="pestañas/camisetas.html"><img src="imagenes/camisetas/Musuculosa-Spurs.webp"
+              class="d-block w-80 m-auto" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <a href="pestañas/camperas.html"><img src="imagenes/camperas/campera-philadelfia.webp"
+              class="d-block w-80 m-auto" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <a href="pestañas/remeras.html"><img src="imagenes/remeras/remera-argentina2.webp" class="d-block w-60 m-auto"
+              alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <a href="pestañas/shorts.html"><img src="imagenes/shorts/short-lakers.webp" class="d-block w-80 m-auto"
+              alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="carrito ">
+      <div class="header-carrito">
+        <h2>Carrito de Compras</h2>
+      </div>
+
+      <div class="carrito-items">
+        <div class="item-carro">
+          <img src="../imagenes/remeras/remera-argentina2.webp" alt="" width="80px">
+          <div class="detalles-item-carro">
+            <span class="titulo-item-carro">Short Chichago Bulls</span>
+            <div class="seleccion-cantidad">
+              <i class="bi bi-cart-dash-fill restar-cantidad"></i>
+              <input type="text" value="1" class="item-cantidad-carro" disabled>
+              <i class="bi bi-cart-plus-fill sumar-cantidad"></i>
+            </div>
+            <span class="precio-item-carro">$8.500</span>
+          </div>
+          <span class="btn-eliminar">
+            <i class="bi bi-trash"></i>
+          </span>
+        </div>
+
+        <div class="item-carro">
+          <img src="../imagenes/remeras/remera-argentina1.webp" alt="" width="80px">
+          <div class="detalles-item-carro">
+            <span class="titulo-item-carro">Short Chichago Bulls</span>
+            <div class="seleccion-cantidad">
+              <i class="bi bi-cart-dash-fill restar-cantidad"></i>
+              <input type="text" value="2" class="item-cantidad-carro" disabled>
+              <i class="bi bi-cart-plus-fill sumar-cantidad"></i>
+            </div>
+            <span class="precio-item-carro">$7.500</span>
+          </div>
+          <span class="btn-eliminar">
+            <i class="bi bi-trash"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="total-carro">
+        <div class="fila">
+          <strong>Tu Total es:</strong>
+          <span class="precio-total-carro">
+            $16.000,00
+          </span>
+        </div>
+        <button class="btn-pagar">Pagar <i class="bi bi-cart-check-fill"></i></button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/sweetaler.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
